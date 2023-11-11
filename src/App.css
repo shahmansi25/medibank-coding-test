@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #ff69b4;
+  --background-color: #f8f9fa;
+  --card-background: #fff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #007bff, #ff69b4);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px var(--card-shadow);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: var(--primary-color);
+  margin: 20px;
+}
+
+.spin {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.CatList {
+  margin-bottom: 20px;
+}
+.owner-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.male-header {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.female-header {
+  background-color: var(--secondary-color);
+  color: var(--card-background);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.CatList .owner-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.accordion-item {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  border: 0;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgb(255, 255, 255);
+}
+.accordion-card {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px var(--card-shadow);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.owner-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.owner-badge {
+  margin-right: 10px;
+}
+
+.owner-badge .badge {
+  background-color: var(--secondary-color);
+  color: var(--card-background);
+}
+
+.owner-details {
+  flex-grow: 1;
+}
+.owner-pets img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

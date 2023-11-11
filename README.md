@@ -35,5 +35,10 @@ This is a simple React application that displays a list of cats organized by gen
 - React
 - React Bootstrap
 
+  ## Live site URL for Preview
+   ```
+   Open [https://main--magnificent-stardust-b17fb9.netlify.app/](https://main--magnificent-stardust-b17fb9.netlify.app/) to view the app in your browser.
+
+
 ## Author
 Mansi Shah 

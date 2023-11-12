@@ -1,12 +1,11 @@
 # medibank-coding-test
 
-This is a simple React application that displays a list of cats organized by gender.
+This is a React application that displays a list of cats organized by gender.
 
 ## Getting Started
 
 1. **Clone the Repository:**
-   git clone https://github.com/your-username/cats-list-app.git
-
+   git clone [url of clone]
 2. **Install Dependencies:**
    cd medibank-coding-test
    npm install
@@ -39,6 +38,3 @@ This is a simple React application that displays a list of cats organized by gen
    ```
    Open [https://main--magnificent-stardust-b17fb9.netlify.app/](https://main--magnificent-stardust-b17fb9.netlify.app/) to view the app in your browser.
 
-
-## Author
-Mansi Shah 
